@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>百度高级搜索</title>
+        <link rel="stylesheet" href="gaojistyle.css">
+    </head>
+    <body>
+        <div id="sousuo">
+            <img src="baidu.png" alt="a logo of baidu" id="logo">
+            <table id="search">
+                <tr>
+                    <td id="nl1" style="text-align: justify;">all these words:</td>
+                    <td>
+                       <input type="text" name="a" id="s1"> 
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td id="nl1" style="text-align: justify;">this exact word or phrase:</td>
+                    <td>
+                        <input type="text" name="b" id="s2">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nl1" style="text-align: justify;">any of these words:</td>
+                    <td>
+                        <input type="text" name="c" id="s3">
+                    </td>
+                </tr>
+                <tr>
+
+                    <td id="nl1" style="text-align: justify;">none of these words:</td>
+                    <td>
+                        <input type="text" name="d" id="s4">
+                    </td>
+                </tr>
+                
+                
+                
+                <p></p>
+            </table>
+            <div style="margin-top: 50px;"></div>
+            <input type="submit" value="百度高级搜索" id="anniu">
+        </div>
+        <a href="./index.html">
+            <button id="btn1">谷歌搜索</button>
+        </a>
+    </body>
+    <script>
+        var nr1=document.getElementById('s1');
+        var nr2=document.getElementById('s2');
+        var nr3=document.getElementById('s3');
+        var nr4=document.getElementById('s4');
+        var an=document.getElementById('anniu');
+
+        an.onclick = function () {
+            Search();
+        }
+
+        document.onkeydown = function () {
+            if (event.keyCode == 13) {
+                Search();
+            }
+        }
+
+        function Search1() {
+            var url1 = 'https://www.baidu.com/s?wd='+nr1.value+'"'+nr2.value+'"'+'('+nr3.value+')'+'-('+nr4.value+')';
+            window.open(url1);
+        }
+        function Search() {
+            var url1 = 'https://www.baidu.com/s?q1='+nr1.value+'&q2='+nr2.value+'&q3='+nr3.value+'&q4='+nr4.value;
+            window.open(url1);
+        }
+    </script>
+
+
+
+</html>

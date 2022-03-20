@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>谷歌识图</title>
+        <link rel="stylesheet" href="tuwen.css">
+        <script>
+            window.onload=function(){
+                var fa=document.getElementById("Acbdwf");
+                var fb=document.getElementById("pi");
+                fb.addEventListener('change',function(){fa.action="https://www.google.com/searchbyimage/upload" ,fa.method="POST",fa.submit()});
+        }
+        </script>
+    </head>
+    <body>
+        <img src="guan.jpg" alt="logo" id="logo1">
+        <div id="search">
+            <form id="Acbdwf" method="GET" enctype="multipart/form-data" action="https://www.google.com/searchbyimage">
+                <span id="s2">
+                    <input name="image_url" id="s1" aria-labelledby="cjyo4e" placeholder="请输入图片网址" spellcheck="false" >
+                    <span>                    
+                        <input id="pi" name="encoded_image" style="position: absolute;opacity: 0; width:35px ;" type="file">
+                        <img src="logo1.jpg" alt="a logo now" id="pic">
+                    </span>
+                </span>
+                <span id="b1">
+                    <input name type="submit" value="识图一下" id="bt1"> 
+                </span>
+                <input id="drITx" name="image_content" type="hidden">
+                <input id="LEqfCf" name="filename" type="hidden">
+                <input name="hl" type="hidden" value="zh-CN">
+
+            </form>
+        </div>
+        <a href="./index.html">
+            <button id="btn1">谷歌搜索</button>
+        </a>
+    </body>
+    
+
+</html>
