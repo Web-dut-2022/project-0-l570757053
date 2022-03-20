@@ -1,0 +1,56 @@
+html{
+    background-color: white;
+
+}
+#pic1{
+    width: 400px;
+    display:block;
+    margin:0 auto;
+}
+#searchbox{
+    display:block;
+    margin:0 auto;
+}
+#neirong{
+    width:450px;
+    height: 30px;
+    display:block;
+    margin:0 auto;
+    border-color: #c0bcbc;
+    padding:0 10px;
+}
+#anniu{
+    font-size: 50px;
+    text-align:center;
+}
+#anniu1{
+    width:150px;
+    height: 35px;
+    color: #767676;
+}
+#anniu2{
+    margin-left: 50px;
+    width: 150px;
+    height: 35px;
+    color: #767676;
+}
+#btn1{
+    position: fixed;
+    background-color: white;
+    border: none;
+    color: black;
+    width: 150px;
+    right:0;
+    top: 0;
+    
+
+}
+#btn2{
+    position: fixed;
+    border: none;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    right: 0;
+    top:30px
+}

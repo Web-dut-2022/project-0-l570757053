@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>search</title>
+        <link rel="stylesheet" href="guge.css">
+    </head>
+    <body>
+        <div id="sousuokuang">
+            <img src="google.webp" alt="just a logo" id="pic1">
+            <div id="searchbox">
+                <input type="text" name="q" id="neirong"> 
+                <div id="anniu">
+                    <input type="submit" value="Google Search" id="anniu1">
+                    <input type="submit" value="I’m Feeling Lucky" id="anniu2">
+                </div>
+                  
+            </div>
+        </div>
+        <a href="https://www.baidu.com/">
+            <button id="btn1">图片搜索</button>
+        </a>
+        <a href="./gaoji.html">
+            <button id="btn2">百度高级搜索</button>
+        </a>
+        
+    </body>
+    <script>
+        var nr=document.getElementById('neirong');
+        var an=document.getElementById('anniu1');
+        var luck=document.getElementById('anniu2');
+
+        an.onclick = function () {
+            Search();
+        }
+
+
+        luck.onclick = function () {
+            Search1();
+        }
+
+
+
+
+        document.onkeydown = function () {
+            if (event.keyCode == 13) {
+                Search();
+            }
+        }
+
+
+        function Search() {
+            var url1 = 'https://www.google.com/search?q=' + nr.value;
+            window.open(url1);
+        }
+
+        function Search1() {
+            var url2 = 'https://www.google.com/search?q=' + nr.value+"&btnI=Im+Feeling+Lucky";
+            window.open(url2);
+        }
+
+    </script>
+</html>
